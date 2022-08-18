@@ -34,6 +34,10 @@ Then just type in the URL of the playlist or song that you want to download and 
 
 If you have any trouble you can add me on [Discord](https://discordapp.com/users/524229083014365194) (or Lucy_Sweets#0001 for if the link doesn't work). I'll try to answer asap, if there is a major error (which I don't expect) I'll most likely not update the program since it was just a simple thing that I made in a couple minutes.
 
+## Notes
+
+RAM usage can add up when downloading large playlists, for most playlists this won't be an issue but it might be something to look out for if you have a playlist with 1-2k+ songs.
+
 ## License
 
 There's no license do with it whatever you want idc.
