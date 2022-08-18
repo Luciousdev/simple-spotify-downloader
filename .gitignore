@@ -1,1 +1,4 @@
 .spotdl-cache
+*.mp3
+*.webm
+spotdl-temp

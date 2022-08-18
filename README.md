@@ -4,12 +4,14 @@ This is a simple program coded in [python 3.10](https://www.python.org/downloads
 
 ## Installation
 
+This is the written version of the tutorial, in the future there will be a video tutorial coming.
+
 Downloaded the repo and extract is somewhere (e.g. on a folder on your desktop.)
 
-also make sure to install [python 3.10](https://www.python.org/downloads/). After installing python type this command in cmd/terminal to install spotdl.
+also make sure to install [python 3.10](https://www.python.org/downloads/). After installing python type this command in cmd/terminal to install most of the needed requirements. Make sure to first cd into the location where you've downloaded the files.
 
 ```bash
-pip install spotdl
+pip install -r requirements.txt
 ```
 
 don't forget to also install [FFMPEG](https://ffmpeg.org/), you can use [THIS](https://www.youtube.com/watch?v=r1AtmY-RMyQ) tutorial made by TroubleChute for a guide on how to install FFMPEG.
