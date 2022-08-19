@@ -1,2 +1,3 @@
 spotdl==3.9.6
 pyfiglet==0.8.post1
+pytz
