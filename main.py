@@ -1,38 +1,15 @@
-# Imports
-import os
-import pyfiglet
-import subprocess
-from datetime import datetime
-import pytz
+import eel
+from src.scripts.downloadsongs import downloadSongs
 
-now = datetime.now()
-# Traverse the info
-Id = subprocess.check_output(['systeminfo']).decode('utf-8').split('\n')
-new = []
- 
-# Arrange the string into clear info
-for item in Id:
-    new.append(str(item.split("\r")[:-1]))
-for i in new:
-    print(i[2:-2])
+eel.init("src/web")
 
-# Banner
+@eel.expose
+def startDownload(userInput):
+  result = downloadSongs(userInput)
+  return result
 
-ascii_banner = pyfiglet.figlet_format("Spotify Downloader")
-print(ascii_banner)
+def start_eel():
+  eel.start("index.html", size=(1280, 720))
 
-# London time
-
-tz_London = pytz.timezone('Europe/London')
-datetime_London = datetime.now(tz_London)
-print("London time:", datetime_London.strftime("%H:%M:%S"))
-
-# Time from user executing the script
-
-current_time = now.strftime("%H:%M:%S")
-print("Current Time =", current_time)
-
-# Actual song/playlist download
-song = input("URL: ")
-os.system(f"spotdl {song}")
-os.remove(".spotdl-cache")
+if __name__ == "__main__":
+  start_eel()

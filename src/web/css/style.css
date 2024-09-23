@@ -1,0 +1,33 @@
+body {
+  background-color: #121212;
+}
+
+h1 {
+  color: #bb86fc;
+  font-size: 3rem;
+}
+
+label {
+  font-size: 2rem;
+  color: #bb86fc;
+}
+
+.btn {
+  background-color: rgba(55, 0, 179, 100%);
+  --bs-btn-border-color: rgba(55, 0, 179, 100%);
+}
+
+.btn:hover {
+  background-color: rgba(55, 0, 179, 80%);
+  --bs-btn-hover-border-color: rgba(55, 0, 179, 80%);
+}
+
+.alert-danger {
+  font-size: 2rem;
+  background-color: #cf6679;
+  --bs-alert-border-color: rgb(164, 78, 94);
+}
+
+.alert-success {
+  font-size: 2rem;
+}
