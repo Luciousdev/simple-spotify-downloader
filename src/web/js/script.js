@@ -2,7 +2,6 @@ var hasAlert = false;
 
 async function downloadSongs(url) {
   let result = await eel.startDownload(url)();
-  console.log(result);
 
   let resultDiv = document.querySelector(".result");
   let alertDiv = document.createElement("div");
@@ -22,7 +21,6 @@ async function downloadSongs(url) {
 
 function submitForm(e) {
   e.preventDefault();
-  console.log(hasAlert);
   if (hasAlert) {
     let alertDiv = document.getElementById("alertMessage");
     if (alertDiv) {
